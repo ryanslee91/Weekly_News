@@ -6,7 +6,7 @@ NEWS STREAMING WEBSITE
 
 ## Project Description
 
-The website that I will be creating for this second project will allow users to search news by topic and receive the links for related news. 
+The website that I will be creating for this second project will allow users to search news by topic and receive the links for related news. This website will enable user to post and edit the comment for each news. This website will also list out all the news by topics. In addition, it will present highlighted news on the homepage and let the user to scroll to look through.
 
 ## Wireframes
 
