@@ -2,15 +2,16 @@
 
 ## Project Name
 
-The name of your project.
+NEWS STREAMING WEBSITE
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and/or functionality.
+The website that I will be creating for this second project will allow users to search news by topic and receive the links for related news. 
 
 ## Wireframes
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+![Wireframe](./assets/WF2.png)
+![Wireframe](./assets/WF3.png)
 
 ## Component Hierarchy
 Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/uploads/users/1795/posts/30352/image/GettingStartedWithReduxTutorial-React-Component-Structure.png) as an example.
