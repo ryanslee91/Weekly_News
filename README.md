@@ -19,59 +19,23 @@ The website that I will be creating for this second project will allow users to 
 
 ## API and Data Sample
 
-Show us a snippet of JSON returned by your Airtable (you can find it under the API documentation) so we know you can access it and get the info you need. This __must__ be properly formatted. An example is below:
 
-```json
-{
-    "records": [
-        {
-            "id": "recONRzIUTuZ5lXaF",
-            "fields": {
-                "author": "Liz Yrineo",
-                "setup": "Why did the tomato turn red?",
-                "punchline": "Because it saw the salad dressing!"
-            },
-            "createdTime": "2020-11-30T16:03:09.000Z"
-        },
-        {
-            "id": "rec3oYZ5Tp0AIDsKe",
-            "fields": {
-                "author": "Rachel Moskowitz",
-                "setup": "What did the green grape say to the red grape?",
-                "punchline": "Breathe, idiot, breathe!"
-            },
-            "createdTime": "2020-11-30T16:03:09.000Z"
-        },
-        {
-            "id": "recA34tOaoE1IVeC1",
-            "fields": {
-                "author": "Gary Grant",
-                "setup": "How do you make holy water?",
-                "punchline": "You boil the hell out of it!"
-            },
-            "createdTime": "2020-11-30T16:03:09.000Z"
-        }
-    ],
-    "offset": "recA34tOaoE1IVeC1"
-}
-```
 
 ### MVP/PostMVP
 
 The functionality will then be divided into two separate lists: MVP and PostMVP.  Carefully decide what is placed into your MVP, as the client will expect this functionality to be implemented upon project completion.  
 
-#### MVP 
-*These are examples only. Replace with your own MVP features.*
+#### MVP
 
-- Find and use external api 
-- Render data on page 
-- Allow user to choose favorites 
+- UTILIZING REACT COMPONENTS PROPERLY.
+- USE AXIOS TO CONSUME DATA FROM AIRTABLE, AND RENDER THAT DATA IN MY COMPONENTS.
+- USE AXIOS TO POST NEW DATA ON AIRTABLE
+
 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
-
-- Add second API
-- Use local storage to save user favorites
+- CREATE A 2ND HEADER THAT DISPLAYS MAJOR STOCK OR CURRENCY INFO
+like the one in Wallstreetjournal.
+- MAKE 'KOREAN' VERSION AVAILABLE.
 
 ## Project Schedule
 
@@ -95,9 +59,22 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| CORE APP STRUCTURE(HTML,CSS,JAVASCRIPT) | H | 3hrs| hrs | hrs |
+| Working with AIRTABLE | H | 3hrs| hrs | hrs |
+| PSEUDOCODE | H | 3hrs| hrs | hrs |
+| AIRTABLE API REQUEST | H | 3hrs| hrs | hrs |
+| CREATE REACT FUNCTIONS | H | 3hrs| hrs | hrs |
+| STYLE CSS | H | 3hrs| hrs | hrs |
+| ROUTE AND LINK | H | 3hrs| hrs | hrs |
+| AXIOS | H | 2hrs| hrs | hrs |
+| USEHISTORY, USEPARAM | H | 2hrs| hrs | hrs |
+| LOADER | H | 1hrs| hrs | hrs |
+| NEW COMMENT | H | 3hrs| hrs | hrs |
+| EDIT COMMENT | H | 3hrs| hrs | hrs |
+| NAVBAR | H | 2hrs| hrs | hrs |
+| DEBUGGING | H | 3hrs| hrs | hrs |
+| DEPLOYMENT | H | 3hrs| hrs | hrs |
+| Total | H | 40hrs| hrs | hrs |
 
 ## SWOT Analysis
 
