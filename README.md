@@ -2,70 +2,107 @@
 
 ## Project Name
 
-
-
-https://ryanslee91.github.io/ryan_project_2/
+The name of your project.
 
 ## Project Description
 
-
- 
-## API and Data Sample
-
+Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and/or functionality.
 
 ## Wireframes
 
+Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
 
+## Component Hierarchy
+Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/uploads/users/1795/posts/30352/image/GettingStartedWithReduxTutorial-React-Component-Structure.png) as an example.
+
+## API and Data Sample
+
+Show us a snippet of JSON returned by your Airtable (you can find it under the API documentation) so we know you can access it and get the info you need. This __must__ be properly formatted. An example is below:
+
+```json
+{
+    "records": [
+        {
+            "id": "recONRzIUTuZ5lXaF",
+            "fields": {
+                "author": "Liz Yrineo",
+                "setup": "Why did the tomato turn red?",
+                "punchline": "Because it saw the salad dressing!"
+            },
+            "createdTime": "2020-11-30T16:03:09.000Z"
+        },
+        {
+            "id": "rec3oYZ5Tp0AIDsKe",
+            "fields": {
+                "author": "Rachel Moskowitz",
+                "setup": "What did the green grape say to the red grape?",
+                "punchline": "Breathe, idiot, breathe!"
+            },
+            "createdTime": "2020-11-30T16:03:09.000Z"
+        },
+        {
+            "id": "recA34tOaoE1IVeC1",
+            "fields": {
+                "author": "Gary Grant",
+                "setup": "How do you make holy water?",
+                "punchline": "You boil the hell out of it!"
+            },
+            "createdTime": "2020-11-30T16:03:09.000Z"
+        }
+    ],
+    "offset": "recA34tOaoE1IVeC1"
+}
+```
 
 ### MVP/PostMVP
 
+The functionality will then be divided into two separate lists: MVP and PostMVP.  Carefully decide what is placed into your MVP, as the client will expect this functionality to be implemented upon project completion.  
+
 #### MVP 
+*These are examples only. Replace with your own MVP features.*
 
-
-
+- Find and use external api 
+- Render data on page 
+- Allow user to choose favorites 
 
 #### PostMVP  
+*These are examples only. Replace with your own Post-MVP features.*
 
+- Add second API
+- Use local storage to save user favorites
 
 ## Project Schedule
 
+This schedule will be used to keep track of your progress throughout the week and align with our expectations. Here's an example.
+
 |  Day | Deliverable | Status
 |---|---| ---|
-|July 13| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|July 14| 
-|July 15| 
-|July 16| 
-|July 17| 
-|July 18| 
-
-## Priority Matrix
-
-
+|July 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
+|July 13| Project Approval | Incomplete
+|July 13| Core Application Structure (HTML, CSS, etc.) | Incomplete
+|July 14| Pseudocode / actual code | Incomplete
+|July 15| Initial Clickable Model  | Incomplete
+|July 16| MVP | Incomplete
+|July 17| Presentations | Incomplete
 
 ## Timeframes
 
+Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
+
+Time frames are also key in the development cycle.  You have limited time to code all parts of your app.  Your estimates can then be used to evalute possibilities based on time needed and the actual time you have before the app must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add an additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| CORE APP STRUCTURE (HTML,CSS,JAVASCRIPT) | H | 3hrs| 3hrs | 3hrs |
-| Researching API | H | 3hrs| 2hrs | 2hrs |
-| Insert search parameter into API | H | 3hrs| 3hrs | 3hrs |
-| PSEUDOCODE | H | 3hrs| 2hrs | 2hrs |
-| API REQUEST(JAVASCRIPT FUNCTION) | H | 3hrs| 2.5hrs | 2.5hrs |
-| CREATE DYNAMIC HTML ELEMENTS | H | 3hrs| 3hrs | 3hrs |
-| UTILIZE FLEXBOX/LAYOUT | H | 3hrs| 2hrs | 2hrs |
-| STYLE HTML ELEMENTS | H | 3hrs| 3hrs | 3hrs |
-| REMOVE PREVIOUS SEARCH RESULT | H | 3hrs| 2hrs | 2hrs |
-| DEBUGGING | H | 3hrs| 2hrs | 2hrs |
-| DEPLOYMENT | H | 1hrs| hrs | hrs |
-| ADD UI ELEMENTS | H | 1hrs| 1hrs | 1hrs |
-| BUILDING PROJECT WORKSHEET | H | 3hrs| 3hrs | 3hrs |
-| APPEND DYNAMIC ELEMENTS | H | 3hrs| 3hrs | 3hrs |
-| Total | H | 40hrs| hrs | hrs |
+| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
+| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
+| Total | H | 6hrs| 5hrs | 5hrs |
 
-## Code Snippet
- 
+## SWOT Analysis
 
+### Strengths:
 
-## Change Log
- Use this section to document what changes were made and the reasoning behind those changes.  
+### Weaknesses:
+
+### Opportunities:
+
+### Threats:
