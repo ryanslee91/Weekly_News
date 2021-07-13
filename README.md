@@ -19,7 +19,36 @@ The website that I will be creating for this second project will allow users to 
 
 ## API and Data Sample
 
+https://airtable.com/tblWqLsYeGt9B13wJ
 
+
+{
+    "records": [
+        {
+            "id": "recfbCkioXk7906iL",
+            "fields": {
+                "title": "test",
+                "briefdesc": "test",
+                "image": "test",
+                "author": "test",
+                "topic": "test",
+                "link": "test"
+            },
+            "createdTime": "2021-07-13T17:20:01.000Z"
+        },
+        {
+            "id": "recaMy5KRvVx7ywkz",
+            "fields": {},
+            "createdTime": "2021-07-13T17:20:01.000Z"
+        },
+        {
+            "id": "recfhhZlWS2V9uLxO",
+            "fields": {},
+            "createdTime": "2021-07-13T17:20:01.000Z"
+        }
+    ],
+    "offset": "recfhhZlWS2V9uLxO"
+}
 
 ### MVP/PostMVP
 
