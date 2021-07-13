@@ -31,7 +31,7 @@ https://ryanslee91.github.io/ryan_project_2/
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|July 13| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
+|July 13| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
 |July 14| 
 |July 15| 
 |July 16| 
