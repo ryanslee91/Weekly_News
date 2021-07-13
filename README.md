@@ -51,10 +51,6 @@ https://airtable.com/tblWqLsYeGt9B13wJ
 }
 ```
 
-### MVP/PostMVP
-
-The functionality will then be divided into two separate lists: MVP and PostMVP.  Carefully decide what is placed into your MVP, as the client will expect this functionality to be implemented upon project completion.  
-
 #### MVP
 
 - UTILIZING REACT COMPONENTS PROPERLY.
@@ -69,7 +65,6 @@ like the one in Wallstreetjournal.
 
 ## Project Schedule
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations. Here's an example.
 
 |  Day | Deliverable | Status
 |---|---| ---|
