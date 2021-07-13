@@ -49,7 +49,8 @@ This schedule will be used to keep track of your progress throughout the week an
 |July 14| Pseudocode / actual code | Incomplete
 |July 15| Initial Clickable Model  | Incomplete
 |July 16| MVP | Incomplete
-|July 17| Presentations | Incomplete
+|July 17-19| POSTMVP /WRAPUP | Incomplete
+|July 20| Presentations | Incomplete
 
 ## Timeframes
 
