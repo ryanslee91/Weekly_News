@@ -10,8 +10,8 @@ The website that I will be creating for this second project will allow users to 
 
 ## Wireframes
 
-![Wireframe](./project2.assets/WF2.png)
-![Wireframe](./project2.assets/WF3.png)
+![Wireframe](./assets/WF2.png)
+![Wireframe](./assets/WF3.png)
 
 ## Component Hierarchy
 Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/uploads/users/1795/posts/30352/image/GettingStartedWithReduxTutorial-React-Component-Structure.png) as an example.
