@@ -3,6 +3,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { BASE_URL, headers } from '../services';
 import { useParams } from 'react-router-dom';
+import NewComment from './NewComment'
 
 export default function NewDetail() {
   const [article, setArticle] = useState({});
@@ -18,7 +19,6 @@ export default function NewDetail() {
 fetchArticle()
   }, []);
 
-  
 
   return (
     <div>
@@ -28,6 +28,7 @@ fetchArticle()
       <h4>Author: {article.fields?.author}</h4> <br />
       <h3>{article.fields?.briefdesc}</h3><br />
       <h4><a href={article.fields?.link} target='_blank'>Read More</a></h4><br />
+    <NewComment /> <br />
     </div>
   )
 }

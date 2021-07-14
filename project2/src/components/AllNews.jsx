@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { BASE_URL, headers } from '../services';
-import { toast } from 'react-toastify';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
@@ -15,7 +14,6 @@ export default function AllNews() {
       });
       console.log(res.data.records);
       setArticles(res.data.records);
-      toast('Here are this week\'s articles');
     }
     fetchArticles();
   }, []);
