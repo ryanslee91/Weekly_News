@@ -9,8 +9,8 @@ export default function Navbar() {
       </Link>
       <div>
       <Link to ='about-us'>About Us</Link>
-      All News
-      Contact Us
+      <Link to ='all-news'>All News</Link>
+      <Link to ='contact-us'>Contact Us</Link>
         </div>
     </div>
   )
