@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
 import { BASE_URL, headers } from '../services';
+import { toast } from 'react-toastify';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
 export default function AllNews() {
   const [articles, setArticles] = useState([]);
+ 
 
   useEffect(() => {
     const fetchArticles = async () => {
@@ -13,6 +15,7 @@ export default function AllNews() {
       });
       console.log(res.data.records);
       setArticles(res.data.records);
+      toast('Here are this week\'s articles');
     }
     fetchArticles();
   }, []);
@@ -20,6 +23,7 @@ export default function AllNews() {
   return (
     <div>
       {articles.map((article) => {
+        // do like small photos and when I hover it becomes big
         return (
           <Link to={`/article/${article.id}`} key={article.id}>
           <img src={article.fields.image} alt={article.fields.name} />

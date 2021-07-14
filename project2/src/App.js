@@ -1,12 +1,16 @@
 import { Route } from 'react-router-dom';
-import './App.css';
+import React from 'react';
 import Navbar from './components/Navbar';
 import AboutUs from './components/AbousUs';
 import Home from './components/Home';
 import AllNews from './components/AllNews';
-import ContactUs from './components/ContactUs';
+import Comments from './components/Comments';
 import NewsDetail from './components/NewsDetail';
+import { ToastContainer } from 'react-toastify';
 
+
+import './App.css';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -24,9 +28,10 @@ function App() {
         <Route path='/article/:id'>
           <NewsDetail />
         </Route>
-      <Route path='/contact-us'>
-        <ContactUs />
-        </Route>
+      <Route path='/comments'>
+        <Comments />
+      </Route>
+      <ToastContainer />
     </div>
   );
 }
