@@ -3,12 +3,12 @@ import { useState } from 'react';
 import { toast } from 'react-toastify';
 import { BASE_URL, headers } from '../services';
 
-
+const commentURL = 'https://api.airtable.com/v0/appzOtkGYT2fmwlmR/comments'
 const defaultForm = {
-  comments: ""
+  body: ""
 };
 
-export default function NewComment() {
+export default function NewComment(props) {
   const [input, setInput] = useState(defaultForm);
   
 
@@ -22,16 +22,21 @@ export default function NewComment() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await axios.post(BASE_URL, { fields: input }, { headers });
+    const fields = {
+      body: input.body,
+      newsart: [props.articleId]
+    }
+    const res = await axios.post(commentURL, { fields }, { headers });
     console.log(res);
     toast.success('Posted a new comment!');
+    props.fetchArticle();
   }
   
   return (
     <div>
       <h3>Add a new comment!</h3>
       <form onSubmit={handleSubmit}>
-<input id='comments' value={input.comments} onChange={handleChange} placeholder="Write your comments.." />
+<input id='body' value={input.body} onChange={handleChange} placeholder="Write your comments.." />
       <button>Post</button><br />
       </form>
     </div>

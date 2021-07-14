@@ -7,19 +7,34 @@ import NewComment from './NewComment'
 
 export default function NewDetail() {
   const [article, setArticle] = useState({});
+  const [comments, setComments] = useState([]);
   const { id } = useParams();
 
   useEffect(() => {
-    const fetchArticle = async () => {
-      const articleURL = `${BASE_URL}/${id}`
-      const res = await axios.get(articleURL, { headers });
-      console.log(res.data);
-      setArticle(res.data);
-    };
+    
 fetchArticle()
   }, []);
 
+  const fetchArticle = async () => {
+    const articleURL = `${BASE_URL}/${id}`
+    const res = await axios.get(articleURL, { headers });
+    // console.log(res.data);
+    setArticle(res.data);
+    if (res.data.fields.comments) {
+      fetchComments(res.data.fields.comments)
+    }
+  };
 
+
+  const fetchComments = async (commentsArr) => {
+    const commentURL = 'https://api.airtable.com/v0/appzOtkGYT2fmwlmR/comments/'
+    commentsArr.forEach(async comment => {
+      const res = await axios.get(`${commentURL}${comment}`, { headers });
+      console.log('res', res.data);
+      setComments((prevComments) => ([...prevComments, res.data]))
+    })
+  }
+  
   return (
     <div>
      <img src={article.fields?.image} alt={article.fields?.name} /><br />
@@ -28,7 +43,8 @@ fetchArticle()
       <h4>Author: {article.fields?.author}</h4> <br />
       <h3>{article.fields?.briefdesc}</h3><br />
       <h4><a href={article.fields?.link} target='_blank'>Read More</a></h4><br />
-    <NewComment /> <br />
+      {comments.map(comment => comment.fields.body)};
+    <NewComment articleId={id} fetchArticle={fetchArticle} /> <br />
     </div>
   )
 }
