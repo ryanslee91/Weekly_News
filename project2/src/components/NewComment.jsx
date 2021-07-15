@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useState } from 'react';
 import { toast } from 'react-toastify';
-import { BASE_URL, headers } from '../services';
+import { headers } from '../services';
 
 const commentURL = 'https://api.airtable.com/v0/appzOtkGYT2fmwlmR/comments'
 const defaultForm = {
@@ -30,7 +30,15 @@ export default function NewComment(props) {
     console.log(res);
     toast.success('Posted a new comment!');
     props.fetchArticle();
+    clearSearch();
   }
+
+  const clearSearch = () => {
+    if (input.body === input.body) {
+      input.body = "";
+    }
+  }
+
   
   return (
     <div>

@@ -42,9 +42,11 @@ fetchArticle()
       <h4>Topic: {article.fields?.topic}</h4><br />
       <h4>Author: {article.fields?.author}</h4> <br />
       <h3>{article.fields?.briefdesc}</h3><br />
-      <h4><a href={article.fields?.link} target='_blank'>Read More</a></h4><br />
-      {comments.map(comment => comment.fields.body)};
+      <h4><a href={article.fields?.link} target='_blank' rel="noreferrer">Read More</a></h4><br />
+      <div className='comments'>
+        <h4>{comments.map(comment => comment.fields.body)}</h4>
     <NewComment articleId={id} fetchArticle={fetchArticle} /> <br />
-    </div>
+      </div>
+      </div>
   )
 }

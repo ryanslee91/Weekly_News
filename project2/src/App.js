@@ -4,8 +4,8 @@ import Navbar from './components/Navbar';
 import AboutUs from './components/AbousUs';
 import Home from './components/Home';
 import AllNews from './components/AllNews';
-import Comments from './components/Comments';
 import NewsDetail from './components/NewsDetail';
+import Footer from './components/Footer';
 import { ToastContainer } from 'react-toastify';
 
 
@@ -26,11 +26,9 @@ function App() {
         <AllNews />
         </Route>
         <Route path='/article/:id'>
-          <NewsDetail />
-        </Route>
-      <Route path='/comments'>
-        <Comments />
+        <NewsDetail />
       </Route>
+      <Footer />
       <ToastContainer />
     </div>
   );

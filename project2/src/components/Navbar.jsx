@@ -1,17 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Navbar.css';
 
 export default function Navbar() {
   return (
     <div>
-      <Link to="/">
-        <h1>WEEKLY HOTTEST NEWS</h1>
-      </Link>
       <div>
-      <Link to ='/about-us'>About Us</Link>
-      <Link to ='/all-news'>All News</Link>
-      <Link to ='/comments'>Comments</Link>
-        </div>
+        <header>
+          <Link to='/about-us' style={{ textDecoration: 'none', color: 'black' }}>
+            <span id='aboutUs'>About Us</span></Link>
+        </header>
+      </div>
+      <Link to="/" style={{ textDecoration: 'none', color: 'black'}}>
+        <h1 id='homeTitle'>WEEKLY HOTTEST NEWS</h1>
+      </Link>
+        <nav>
+        <Link to='/all-news' style={{ textDecoration: 'none', color: 'brown' }}>
+         NEWS LIST</Link>
+        </nav>
     </div>
   )
 }
