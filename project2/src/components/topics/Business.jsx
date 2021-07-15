@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import { BASE_URL, headers } from '../services';
+import { BASE_URL, headers } from '../../services/index';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
-export default function Fashion() {
+export default function Business() {
   const [articles, setArticles] = useState([]);
   useEffect(() => {
     const fetchArticles = async () => {
@@ -19,7 +19,7 @@ export default function Fashion() {
   return (
     <div>
       {articles.map((article) => {
-        if (article.fields.topic === 'Fashion') {
+        if (article.fields.topic === 'Business') {
           return (
             <Link to={`/article/${article.id}`} key={article.id}>
               <img src={article.fields.image} alt={article.fields.name} />

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { BASE_URL, headers } from '../services';
+import { BASE_URL, headers } from '../../services/index';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 

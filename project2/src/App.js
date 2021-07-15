@@ -6,20 +6,19 @@ import Home from './components/Home';
 import AllNews from './components/AllNews';
 import NewsDetail from './components/NewsDetail';
 import Footer from './components/Footer';
-import Sports from './components/Sports';
-import LatAme from './components/LatAme'
+import Sports from './components/topics/Sports';
+import LatAme from './components/topics/LatAme';
+import Economy from './components/topics/Economy';
+import Fashion from './components/topics/Fashion';
+import Tech from './components/topics/Tech';
+import Markets from './components/topics/Markets';
+import Business from './components/topics/Business';
+import UsNews from './components/topics/UsNews';
+import World from './components/topics/World';
 import { ToastContainer } from 'react-toastify';
-
 
 import './App.css';
 import 'react-toastify/dist/ReactToastify.css';
-import Economy from './components/Economy';
-import Fashion from './components/Fashion';
-import Tech from './components/Tech';
-import Markets from './components/Markets';
-import Business from './components/Business';
-import UsNews from './components/UsNews';
-import World from './components/World';
 
 function App() {
   return (
