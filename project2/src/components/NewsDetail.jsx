@@ -3,7 +3,8 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { BASE_URL, headers } from '../services';
 import { useParams } from 'react-router-dom';
-import NewComment from './NewComment'
+import NewComment from './NewComment';
+import './NewsDetail.css';
 
 export default function NewDetail() {
   const [article, setArticle] = useState({});

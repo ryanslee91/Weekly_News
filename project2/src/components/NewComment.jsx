@@ -2,6 +2,7 @@ import axios from 'axios';
 import { useState } from 'react';
 import { toast } from 'react-toastify';
 import { headers } from '../services';
+import './NewComment.css';
 
 const commentURL = 'https://api.airtable.com/v0/appzOtkGYT2fmwlmR/comments'
 const defaultForm = {
@@ -41,12 +42,18 @@ export default function NewComment(props) {
 
   
   return (
-    <div>
-      <h3>Add a new comment!</h3>
+    <section>
+      <div>
+
+      </div>
+    <div class="container">
+        <h3>Add your comment!</h3>
       <form onSubmit={handleSubmit}>
-<input id='body' value={input.body} onChange={handleChange} placeholder="Write your comments.." />
-      <button>Post</button><br />
+       
+<textarea id='body' value={input.body} onChange={handleChange} placeholder="Write your comments.." />
+      <button>Post</button>
       </form>
-    </div>
+      </div>
+      </section>
   )
 }

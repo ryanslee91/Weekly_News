@@ -24,7 +24,7 @@ export default function Home() {
 
   const handleSearch = (e) => {
     e.preventDefault();
-    // if (e.target.value = '') {
+    // if (e = '') {
     //   setAllQueriedArticles([]);
     // }
     if (articles.length > 0){
@@ -53,7 +53,10 @@ export default function Home() {
       <div>
         <SearchBar onChange={handleSearch} />
         {allQueriedArticles.map((article) => (
-          <h1>{article.fields.title}</h1>
+             <Link to={`/article/${article.id}`} key={article.id}>
+             <img src={article.fields.image} alt={article.fields.name} />
+             <h3>{article.fields.title}</h3>
+           </Link>
         ))}
       </div>
   </div>
