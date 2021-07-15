@@ -8,6 +8,7 @@ import ClipLoader from "react-spinners/ClipLoader";
 export default function Home() {
 
   const [articles, setArticles] = useState([]);
+  const [allQueriedArticles, setAllQueriedArticles] = useState([]);
  
 
   useEffect(() => {
@@ -15,12 +16,24 @@ export default function Home() {
       const res = await axios.get(BASE_URL, {
         headers,
       });
-      console.log(res.data.records);
+      // console.log(res.data.records);
       setArticles(res.data.records);
     }
     fetchArticles();
   }, []);
 
+  const handleSearch = (e) => {
+    e.preventDefault();
+    // if (e.target.value = '') {
+    //   setAllQueriedArticles([]);
+    // }
+    if (articles.length > 0){
+      const newQueriedListings = articles.filter((article) =>
+        article.fields.title.toLowerCase().includes(e.target.value.toLowerCase())
+      );
+      setAllQueriedArticles(newQueriedListings);
+    }
+  };  
 
   return (
     <div>
@@ -38,7 +51,10 @@ export default function Home() {
       })}
       </div>
       <div>
-        <SearchBar />
+        <SearchBar onChange={handleSearch} />
+        {allQueriedArticles.map((article) => (
+          <h1>{article.fields.title}</h1>
+        ))}
       </div>
   </div>
 )

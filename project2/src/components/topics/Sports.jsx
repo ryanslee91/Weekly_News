@@ -10,7 +10,7 @@ export default function Sports() {
       const res = await axios.get(BASE_URL, {
         headers,
       });
-      console.log(res.data.records);
+      // console.log(res.data.records);
       setArticles(res.data.records);
     }
     fetchArticles();
