@@ -1,6 +1,6 @@
 .allNewsList {
 	margin-top: 100px;
-	margin-bottom: 50px;
+	margin-bottom: 130px;
 	display: grid;
 	grid-template-rows: 100px 100px;
 	grid-auto-flow: column;
@@ -10,4 +10,64 @@
 	justify-content: center;
 	font-weight: bold;
 	font-size: 30px;
+}
+
+.business {
+	opacity: 0.8;
+	background-image: url('http://www.do-business-in-germany.com/images/start_business.jpg');
+	background-size: cover;
+}
+
+.economy {
+	opacity: .8;
+	background-image: url('https://images.unsplash.com/photo-1604594849809-dfedbc827105?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
+	background-size: cover;
+}
+
+.fashion {
+	opacity: .8;
+	background-image: url('https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=401&q=80');
+	background-size: cover;
+}
+
+.latame {
+	opacity: .8;
+	background-image: url('https://upload.wikimedia.org/wikipedia/en/e/ef/Flags_south_america.png');
+	background-size: cover;
+}
+
+.markets {
+	opacity: .8;
+	background-image: url('https://media-eng.dhakatribune.com/uploads/2020/05/b4-1-1589372051995.jpg');
+	background-size: cover;
+}
+
+.politics {
+	opacity: .8;
+	background-image: url('https://www.tripsavvy.com/thmb/OVeZU_B8Fk4evfk80dXsAeOLj7k=/950x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/capitol-panoramic-56a236e95f9b58b7d0c7f838-7a8a87c96de14a159dc801890a28d81e.jpg');
+	background-size: cover;
+}
+
+.sports {
+	opacity: .8;
+	background-image: url('https://www.denverpost.com/wp-content/uploads/2021/01/BUCCANEERS-SAINTS_17837-1.jpg?w=525');
+	background-size: cover;
+}
+
+.tech {
+	opacity: .8;
+	background-image: url('https://assets.mofoprod.net/network/images/cover-picture_i4S5vbB.original.jpg');
+	background-size: cover;
+}
+
+.usNews {
+	opacity: .8;
+	background-image: url('https://thumb.spokesman.com/Da0rBz9RtwlkWKL5ppCrdsKUuBc=/media.spokesman.com/photos/2020/06/12/AmericanFlag.jpg');
+	background-size: cover;
+}
+
+.world {
+	opacity: .8;
+	background-image: url('https://i1.wp.com/cms.babbel.news/wp-content/uploads/2019/09/CM_MagazineHeader_10MostSpokenLanguages.png?resize=830%2C467');
+	background-size: cover;
 }

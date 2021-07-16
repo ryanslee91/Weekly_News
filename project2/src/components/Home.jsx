@@ -42,17 +42,16 @@ export default function Home() {
   return (
     <div className='home'>
       <div className='topicList'>
-      <h5>Home</h5>
-        <h5>Business</h5>
-        <h5>Economy</h5>
-        <h5>Fashion</h5>
-        <h5>Latin America</h5>
-        <h5>Markets</h5>
-        <h5>Politics</h5>
-        <h5>Sports</h5>
-        <h5>Tech</h5>
-        <h5>U.S.</h5>
-        <h5>World</h5>
+      <Link to='/business' style={{textDecoration: 'none', color:'black'}}>Business</Link>
+      <Link to='/economy' style={{textDecoration: 'none', color:'black'}}>Economy</Link> 
+      <Link to='/fashion' style={{textDecoration: 'none', color:'black'}}>Fashion</Link> 
+      <Link to='/latin-america' style={{textDecoration: 'none', color:'black'}}>Latin America</Link>
+      <Link to='/markets' style={{textDecoration: 'none', color:'black'}}>Markets</Link> 
+      <Link to='/politics' style={{textDecoration: 'none', color:'black'}}>Politics</Link> 
+      <Link to='/sports' style={{textDecoration: 'none', color:'black'}}>Sports</Link> 
+      <Link to='/tech' style={{textDecoration: 'none', color:'black'}}>Tech</Link> 
+      <Link to='/us' style={{textDecoration: 'none', color:'black'}}>US</Link> 
+      <Link to='/world' style={{textDecoration: 'none', color:'black'}}>World</Link> 
       </div>
       <div className='middle'>
       <div>
@@ -76,7 +75,7 @@ export default function Home() {
         <div className='queriedArt'>
         {allQueriedArticles.map((article) => (
              <Link to={`/article/${article.id}`} key={article.id} style={{ textDecoration: 'none'}}>
-             <img src={article.fields.image} alt={article.fields.name} />
+             <img src={article.fields.image} alt={article.fields.name} className='queriedImg' />
             <h3>{article.fields.title}</h3>
           </Link>
         ))}</div>

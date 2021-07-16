@@ -13,6 +13,7 @@ import Fashion from './components/topics/Fashion';
 import Tech from './components/topics/Tech';
 import Markets from './components/topics/Markets';
 import Business from './components/topics/Business';
+import Politics from './components/topics/Politics';
 
 import UsNews from './components/topics/UsNews';
 import World from './components/topics/World';
@@ -48,10 +49,10 @@ function App() {
         <World />
       </Route>
       <Route path='/politics'>
-        <UsNews />
+        <Politics />
       </Route>
       <Route path='/us-news'>
-        <LatAme />
+        <UsNews />
       </Route>
       <Route path='/tech'>
         <Tech />
