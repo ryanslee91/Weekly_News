@@ -1,0 +1,35 @@
+.middle {
+	background-image: url('https://cdn.wallpapersafari.com/65/71/saA5LN.jpg');
+	background-size: cover;
+}
+
+.newsOfDay {
+	width: 500px;
+	height: 320px;
+	border: 1px solid black;
+	padding: 50px;
+	margin: 20px;
+	margin: auto;
+	background-color: white;
+}
+#dayImage {
+	width: 450px;
+	padding-top: 80px;
+	padding-bottom: -30px;
+}
+.newsDay {
+	margin-top: -150px;
+	color: black;
+}
+
+h3 {
+	color: black;
+}
+
+.queriedArt {
+	margin-bottom: 100px;
+}
+
+#guide {
+	margin-bottom: 100px;
+}

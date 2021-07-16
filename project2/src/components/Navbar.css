@@ -26,7 +26,13 @@ header {
 	padding-top: 30px;
 	font-size: 24px;
 	font-family: 'Yatra One', serif;
-	color: rgb(41, 38, 38);
+	color: black;
+}
+
+.newsList {
+	padding-top: 10px;
+	padding-bottom: 30px;
+	font-family: 'Yatra One', serif;
 }
 
 .stockNav {

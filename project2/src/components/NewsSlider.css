@@ -1,7 +1,29 @@
+.slider {
+	margin-top: -20px;
+	background-color: white;
+}
+
 .left-arrow {
-	padding-left: 280px;
+	padding-left: 10px;
+	border: solid black;
+	border-width: 0 3px 3px 0;
+	padding: 3px;
 }
 
 .right-arrow {
-	padding-left: 1000px;
+	margin-right: -280px;
+	border: solid black;
+	border-width: 0 3px 3px 0;
+	padding: 3px;
+}
+
+.imageSlide {
+	width: 500px;
+	height: 250px;
+	margin-top: -60px;
+}
+
+.title {
+	color: black;
+	font-size: 20px;
 }

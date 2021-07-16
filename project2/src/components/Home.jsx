@@ -4,6 +4,7 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 import SearchBar from './SearchBar';
 import NewsSlider from './NewsSlider';
+import './Home.css';
 
 import ClipLoader from "react-spinners/ClipLoader";
 
@@ -39,31 +40,34 @@ export default function Home() {
   };  
 
   return (
-    <div>
+    <div class='home'>
+      <div class='middle'>
       <div>
        <NewsSlider />
       </div>
-      <div>
-      <h2 style={{ color: "green" }}>NEWS OF THE DAY</h2>
+      <div class='newsOfDay'>
+      <h2 class='newsDay'>NEWS OF THE DAY</h2>
       {articles.map((article) => {
         if (article.fields.main === 'yes') {
           return (
-            <Link to={`/article/${article.id}`} key={article.id}>
-              <img src={article.fields.image} alt={article.fields.name} />
+            <Link to={`/article/${article.id}`} key={article.id} style={{ textDecoration: 'none'}}>
+              <img src={article.fields.image} alt={article.fields.name} id='dayImage' />
               <h3>{article.fields.title}</h3>
             </Link>
           )
         }
-      })}
+      })}</div>
  </div>
       <div>
         <SearchBar onChange={handleSearch} />
+        <div className='queriedArt'>
         {allQueriedArticles.map((article) => (
-             <Link to={`/article/${article.id}`} key={article.id}>
+             <Link to={`/article/${article.id}`} key={article.id} style={{ textDecoration: 'none'}}>
              <img src={article.fields.image} alt={article.fields.name} />
-             <h3>{article.fields.title}</h3>
-           </Link>
-        ))}
+            <h3>{article.fields.title}</h3>
+          </Link>
+        ))}</div>
+        <h4 id='guide'>Click the image or title to read more..</h4>
       </div>
   </div>
 )

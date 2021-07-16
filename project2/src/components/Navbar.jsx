@@ -12,14 +12,14 @@ export default function Navbar() {
             <span id='aboutUs'>About Us</span></Link>
         </header>
       </div>
-      <Link to="/" style={{ textDecoration: 'none', color: 'black'}}>
+      <Link to="/" style={{ textDecoration: 'none'}}>
         <h1 id='homeTitle'>WEEKLY HOT NEWS</h1>
       </Link>
       <nav className='stockNav'>
         <Stock />
         </nav>
-        <nav className='newslist'>
-        <Link to='/all-news' style={{ textDecoration: 'none', color: 'brown' }}>
+        <nav className='newsList'>
+        <Link to='/all-news' style={{ textDecoration: 'none', color: 'black' }}>
          NEWS LIST</Link>
       </nav>
     </div>
