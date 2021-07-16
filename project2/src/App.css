@@ -1,9 +1,8 @@
-@import url(https://fonts.googleapis.com/css?family=Gudea);
+@import url(https://fonts.googleapis.com/css?family=Saira+Condensed);
 
 .App {
 	text-align: center;
-	font-family: 'Gudea', serif;
-	background-image: url('');
+	font-family: 'Saira Condensed', serif;
 }
 
 .slider {

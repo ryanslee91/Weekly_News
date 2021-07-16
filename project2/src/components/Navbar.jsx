@@ -5,7 +5,7 @@ import Stock from './Stock';
 
 export default function Navbar() {
   return (
-    <div>
+    <div className='navBar'>
       <div>
         <header>
           <Link to='/about-us' style={{ textDecoration: 'none', color: 'black' }}>
