@@ -3,6 +3,12 @@
 	background-size: cover;
 }
 
+.topicList {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
 .newsOfDay {
 	width: 500px;
 	height: 320px;
@@ -14,12 +20,11 @@
 }
 #dayImage {
 	width: 450px;
-	padding-top: 80px;
 	padding-bottom: -30px;
 }
 .newsDay {
-	margin-top: -150px;
 	color: black;
+	margin-top: -50px;
 }
 
 h3 {

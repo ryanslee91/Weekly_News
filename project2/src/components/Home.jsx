@@ -40,13 +40,26 @@ export default function Home() {
   };  
 
   return (
-    <div class='home'>
-      <div class='middle'>
+    <div className='home'>
+      <div className='topicList'>
+      <h5>Home</h5>
+        <h5>Business</h5>
+        <h5>Economy</h5>
+        <h5>Fashion</h5>
+        <h5>Latin America</h5>
+        <h5>Markets</h5>
+        <h5>Politics</h5>
+        <h5>Sports</h5>
+        <h5>Tech</h5>
+        <h5>U.S.</h5>
+        <h5>World</h5>
+      </div>
+      <div className='middle'>
       <div>
        <NewsSlider />
       </div>
-      <div class='newsOfDay'>
-      <h2 class='newsDay'>NEWS OF THE DAY</h2>
+      <div className='newsOfDay'>
+      <h2 className='newsDay'>NEWS OF THE DAY</h2>
       {articles.map((article) => {
         if (article.fields.main === 'yes') {
           return (
