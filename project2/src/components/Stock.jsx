@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useState, useEffect } from 'react'
+import './Stock.css'
 
 export default function Stocks() {
   const [stock, setStock] = useState([]);
@@ -16,10 +17,10 @@ export default function Stocks() {
     <div className='stock'>
       AAPL <br />
       <div className='stockStatus'>
-      Current: {stock.c}
-      Highest: {stock.h}
-      Lowest: {stock.l}
-      Opening: {stock.o}
+      <span id='current'>Current:</span> {stock.c}
+      <span id='highest'>Highest:</span> {stock.h}
+      <span id='lowest'>Lowest:</span> {stock.l}
+      <span id='opening'>Opening:</span> {stock.o}
         </div>
     </div>
   )

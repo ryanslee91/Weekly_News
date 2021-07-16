@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 export default function AllNews() {
   return (
     <div>
-      <h3>TOPICS</h3>
       <Link to='/business'>Business</Link> <br />
       <Link to='/economy'>Economy</Link> <br />
       <Link to='/fashion'>Fashion</Link> <br />

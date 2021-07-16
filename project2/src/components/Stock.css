@@ -1,0 +1,27 @@
+.stockStatus {
+	color: white;
+	display: flex;
+	justify-content: center;
+	justify-content: space-evenly;
+}
+
+.stock {
+	color: white;
+	font-weight: bold;
+}
+
+#current {
+	color: red;
+}
+
+#highest {
+	color: green;
+}
+
+#lowest {
+	color: yellow;
+}
+
+#opening {
+	color: rgb(189, 29, 184);
+}

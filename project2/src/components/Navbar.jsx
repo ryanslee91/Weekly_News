@@ -13,7 +13,7 @@ export default function Navbar() {
         </header>
       </div>
       <Link to="/" style={{ textDecoration: 'none', color: 'black'}}>
-        <h1 id='homeTitle'>WEEKLY HOTTEST NEWS</h1>
+        <h1 id='homeTitle'>WEEKLY HOT NEWS</h1>
       </Link>
       <nav className='stockNav'>
         <Stock />
@@ -21,7 +21,7 @@ export default function Navbar() {
         <nav className='newslist'>
         <Link to='/all-news' style={{ textDecoration: 'none', color: 'brown' }}>
          NEWS LIST</Link>
-        </nav>
+      </nav>
     </div>
   )
 }
