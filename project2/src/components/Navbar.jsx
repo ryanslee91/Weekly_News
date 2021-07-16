@@ -15,7 +15,7 @@ export default function Navbar() {
       <Link to="/" style={{ textDecoration: 'none', color: 'black'}}>
         <h1 id='homeTitle'>WEEKLY HOTTEST NEWS</h1>
       </Link>
-      <nav className='stock'>
+      <nav className='stockNav'>
         <Stock />
         </nav>
         <nav className='newslist'>
