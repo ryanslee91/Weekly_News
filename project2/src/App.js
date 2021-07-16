@@ -13,12 +13,14 @@ import Fashion from './components/topics/Fashion';
 import Tech from './components/topics/Tech';
 import Markets from './components/topics/Markets';
 import Business from './components/topics/Business';
+
 import UsNews from './components/topics/UsNews';
 import World from './components/topics/World';
 import { ToastContainer } from 'react-toastify';
 
 import './App.css';
 import 'react-toastify/dist/ReactToastify.css';
+
 
 function App() {
   return (

@@ -10,13 +10,18 @@ export default function NewDetail() {
   const [article, setArticle] = useState({});
   const [comments, setComments] = useState([]);
   const { id } = useParams();
+  const [toggle, setToggle] = useState(false);
 
   useEffect(() => {
     
-fetchArticle()
+    fetchArticle()
+  
   }, []);
 
+
+
   const fetchArticle = async () => {
+    setComments([]);
     const articleURL = `${BASE_URL}/${id}`
     const res = await axios.get(articleURL, { headers });
     // console.log(res.data);
@@ -44,10 +49,12 @@ fetchArticle()
       <h4>Author: {article.fields?.author}</h4> <br />
       <h3>{article.fields?.briefdesc}</h3><br />
       <h4><a href={article.fields?.link} target='_blank' rel="noreferrer">Read More</a></h4><br />
+      <NewComment articleId={id} fetchArticle={fetchArticle} /> <br />
       <div className='comments'>
-        <h4>{comments.map(comment => comment.fields.body)}</h4>
-    <NewComment articleId={id} fetchArticle={fetchArticle} /> <br />
-      </div>
+        {comments.map(comment =>
+          (<h4 > {comment.fields.body}</h4>))}
+          </div>
+  
       </div>
   )
 }

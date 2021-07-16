@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import { BASE_URL, headers } from '../services';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import SearchBar from './SearchBar'
+import SearchBar from './SearchBar';
+import NewsSlider from './NewsSlider';
 import ClipLoader from "react-spinners/ClipLoader";
 
 export default function Home() {
@@ -24,14 +25,15 @@ export default function Home() {
 
   const handleSearch = (e) => {
     e.preventDefault();
-    // if (e = '') {
-    //   setAllQueriedArticles([]);
-    // }
-    if (articles.length > 0){
-      const newQueriedListings = articles.filter((article) =>
-        article.fields.title.toLowerCase().includes(e.target.value.toLowerCase())
-      );
-      setAllQueriedArticles(newQueriedListings);
+    if (articles.length > 0) {
+      if (e.target.value === '' || e.target.value === ' ') {
+        const newQueriedListings = []
+        setAllQueriedArticles(newQueriedListings);
+      } else {
+        const newQueriedListings = articles.filter((article) =>
+          article.fields.title.toLowerCase().includes(e.target.value.toLowerCase())
+        ); setAllQueriedArticles(newQueriedListings);
+      }
     }
   };  
 
@@ -39,16 +41,7 @@ export default function Home() {
     <div>
       <h2 style={{ color: "green" }}>NEWS OF THE DAY</h2>
       <div>
-        {articles.map((article) => {
-          if (article.fields.main === 'yes') {
-            return (
-              <Link to={`/article/${article.id}`} key={article.id}>
-                <img src={article.fields.image} alt={article.fields.name} />
-                <h3>{article.fields.title}</h3>
-              </Link>
-            )
-          }
-      })}
+       <NewsSlider />
       </div>
       <div>
         <SearchBar onChange={handleSearch} />
