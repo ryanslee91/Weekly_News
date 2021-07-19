@@ -28,6 +28,10 @@ span {
 	word-break: break-all;
 }
 
+a {
+	color: black;
+}
+
 @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
 	.fetched {
 		padding-left: 60px;

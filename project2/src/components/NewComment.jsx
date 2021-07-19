@@ -37,8 +37,9 @@ export default function NewComment(props) {
   }
 
   const clearSearch = () => {
-    if (input.body === input.body) {
+    if (input.body === input.body && input.name === input.name) {
       input.body = "";
+      input.name = "";
     }
   }
 
