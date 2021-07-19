@@ -41,6 +41,9 @@ export default function Home() {
 
   return (
     <div className='home'>
+      <head>
+        <title>Weekly Hot News</title>
+        </head>
       <div className='topicList'>
       <Link to='/business' style={{textDecoration: 'none', color:'black'}}>Business</Link>
       <Link to='/economy' style={{textDecoration: 'none', color:'black'}}>Economy</Link> 
