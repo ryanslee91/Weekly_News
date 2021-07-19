@@ -38,9 +38,11 @@ export default function NewsSlider() {
 
   return (
     <section className='slider'>
+      <div className='slider-arrows'>
       <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide} />
       <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide} />
-      {articles.map((article, index) => {
+      </div>
+        {articles.map((article, index) => {
         return (
           <div className={index === current ? 'slide active' : 'slide'}
             key={index}>

@@ -14,3 +14,11 @@ footer {
 	background-color: white;
 	border-radius: 10px;
 }
+
+@media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+	footer {
+		height: 183px;
+		width: 100%;
+		padding-right: 82px;
+	}
+}
