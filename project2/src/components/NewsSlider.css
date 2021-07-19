@@ -40,11 +40,12 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
+	display: inline;
 	font-size: 24px;
 	margin-left: 50px;
 	margin-right: 10px;
-	margin-bottom: 80px;
-	background: rgba(135, 186, 218, 0.72);
+	margin-bottom: 30px;
+	background: rgba(150, 157, 162, 0.72);
 	color: #fff;
 	visibility: hidden;
 	opacity: 0;
@@ -55,4 +56,22 @@
 .img_wrap:hover .briefDesc {
 	visibility: visible;
 	opacity: 1;
+}
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+	.imageSlide {
+		width: 300px;
+		height: 200px;
+		margin-top: -100px;
+	}
+	.slider {
+		padding-left: 230px;
+	}
+
+	.left-arrow {
+		margin-left: 100px;
+	}
+	.right-arrow {
+		margin-right: -410px;
+	}
 }

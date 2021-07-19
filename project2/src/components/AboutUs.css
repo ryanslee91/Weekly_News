@@ -1,0 +1,19 @@
+.intro {
+	color: black;
+}
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+	h2,
+	.intro {
+		padding-left: 230px;
+	}
+
+	h2 {
+		font-size: 40px;
+	}
+
+	.intro {
+		font-size: 36px;
+		padding-bottom: 100px;
+	}
+}

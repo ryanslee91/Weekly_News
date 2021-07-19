@@ -6,3 +6,13 @@ img {
 	margin-top: 50px;
 	margin-bottom: 50px;
 }
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+	img {
+		width: 200px;
+		padding-left: 200px;
+	}
+	.topicData {
+		padding-left: 200px;
+	}
+}

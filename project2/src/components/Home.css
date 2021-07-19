@@ -42,3 +42,20 @@ h3 {
 .queriedImg {
 	width: 480px;
 }
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+	.topicList {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 160%;
+	}
+
+	#dayImage {
+		width: 300px;
+	}
+
+	.newsOfDay {
+		height: 250px;
+	}
+}

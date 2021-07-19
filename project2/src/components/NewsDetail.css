@@ -27,3 +27,32 @@ span {
 .briefDesc {
 	word-break: break-all;
 }
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+	.fetched {
+		padding-left: 60px;
+	}
+	.subInfo {
+		display: grid;
+		justify-content: center;
+		margin-left: 160px;
+	}
+
+	.author {
+		font-size: 30px;
+	}
+	.topic {
+		font-size: 30px;
+	}
+
+	h4 {
+		padding-left: 50px;
+	}
+
+	.commentSec {
+		margin-bottom: 50px;
+	}
+	container {
+		border-left: 100px;
+	}
+}

@@ -71,3 +71,14 @@
 	background-image: url('https://i1.wp.com/cms.babbel.news/wp-content/uploads/2019/09/CM_MagazineHeader_10MostSpokenLanguages.png?resize=830%2C467');
 	background-size: cover;
 }
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+	.allNewsList {
+		margin-left: 230px;
+		display: grid;
+		grid-template-rows: 100px 100px;
+		grid-auto-flow: row;
+		grid-auto-columns: 120px;
+		padding-bottom: 100px;
+	}
+}

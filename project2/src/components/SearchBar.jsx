@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { BASE_URL, headers } from "../services";
+import './SearchBar.css'
 
 export default function SearchBar(props) {
   const [input, setInput] = useState([]);
@@ -23,7 +24,7 @@ export default function SearchBar(props) {
 
   }
   return (
-    <div>
+    <div className='searchSection'>
       <h3>LOOK FOR MORE ARTICLES</h3>
       <form>
       <input type='text' placeholder='Search..' onChange={(e) => props.onChange(e)} style={{ marginBottom: ' 40px' }}></input>
