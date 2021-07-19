@@ -53,9 +53,21 @@ h3 {
 
 	#dayImage {
 		width: 300px;
+		padding-left: 20px;
 	}
 
-	.newsOfDay {
-		height: 250px;
+	.newsDay {
+		padding-left: 20px;
+	}
+
+	.queriedImg {
+		width: 300px;
+		padding-left: 50px;
+		margin-right: -160px;
+	}
+
+	#queriedTitle {
+		padding-left: 50px;
+		margin-right: -160px;
 	}
 }

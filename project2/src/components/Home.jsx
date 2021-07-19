@@ -76,7 +76,7 @@ export default function Home() {
         {allQueriedArticles.map((article) => (
              <Link to={`/article/${article.id}`} key={article.id} style={{ textDecoration: 'none'}}>
              <img src={article.fields.image} alt={article.fields.name} className='queriedImg' />
-            <h3>{article.fields.title}</h3>
+            <h3 id='queriedTitle'>{article.fields.title}</h3>
           </Link>
         ))}</div>
         <h4 id='guide'>Click the image or title to read more..</h4>

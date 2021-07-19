@@ -59,7 +59,7 @@ export default function NewDetail() {
       </div>
         <div className='comments'>
         {comments.map(comment =>
-          (<h4 > {comment.fields.body}</h4>))}
+          (<h4><span id='commentor'>{comment.fields.name}:</span> {comment.fields.body}</h4>))}
         </div>
         </div>
       </div>

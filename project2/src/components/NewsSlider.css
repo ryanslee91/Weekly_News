@@ -1,5 +1,5 @@
 .slider {
-	background-color: white;
+	background: white;
 }
 
 .left-arrow {
@@ -62,7 +62,8 @@
 	.imageSlide {
 		width: 300px;
 		height: 200px;
-		margin-top: -100px;
+		margin-top: -120px;
+		margin-left: -195px;
 	}
 	.slider {
 		padding-left: 230px;

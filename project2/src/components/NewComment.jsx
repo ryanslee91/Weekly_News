@@ -6,7 +6,7 @@ import './NewComment.css';
 
 const commentURL = 'https://api.airtable.com/v0/appzOtkGYT2fmwlmR/comments'
 const defaultForm = {
-  // name: "",
+  name: "",
   body: ""
 };
 
@@ -25,7 +25,7 @@ export default function NewComment(props) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const fields = {
-      // name: input.name,
+      name: input.name,
       body: input.body,
       newsart: [props.articleId]
     }
@@ -52,6 +52,8 @@ export default function NewComment(props) {
         <h3>Add your comment!</h3>
       <form onSubmit={handleSubmit}>
           {/* <input id='name' value={input.name} onChange={handleChange} placeholder='Your Name' /> */}
+          <textarea id='name' value={input.name} onChange={handleChange}
+            placeholder="Name" /><br />
           <textarea id='body' value={input.body} onChange={handleChange}
             placeholder="Write your comments.." />
       <button>Post</button>
