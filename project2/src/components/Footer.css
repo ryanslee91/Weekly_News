@@ -8,3 +8,8 @@ footer {
 	justify-content: center;
 	justify-content: space-evenly;
 }
+
+a {
+	background-color: white;
+	border-radius: 10px;
+}
