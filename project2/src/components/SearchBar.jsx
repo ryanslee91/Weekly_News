@@ -1,11 +1,9 @@
 import { useState } from "react";
-import axios from "axios";
-import { BASE_URL, headers } from "../services";
 import './SearchBar.css'
 
 export default function SearchBar(props) {
   const [input, setInput] = useState([]);
-
+ // eslint-disable-next-line
   const handleChange = (event) => {
     const { title, value } = event.target;
     console.log(title, value, input);
@@ -17,12 +15,13 @@ export default function SearchBar(props) {
 
 
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const res = await axios.post(BASE_URL, { fields: input }, { headers });
-    console.log(res);
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   const res = await axios.post(BASE_URL, { fields: input }, { headers });
+  //   console.log(res);
 
-  }
+  // }
+
   return (
     <div className='searchSection'>
       <h3>LOOK FOR MORE ARTICLES</h3>

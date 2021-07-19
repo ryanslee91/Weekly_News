@@ -37,6 +37,7 @@ export default function NewComment(props) {
   }
 
   const clearSearch = () => {
+     // eslint-disable-next-line
     if (input.body === input.body && input.name === input.name) {
       input.body = "";
       input.name = "";

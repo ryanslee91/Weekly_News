@@ -28,6 +28,7 @@ export default function Fashion() {
             </Link>
           )
         }
+        return null;
       })}
  </div>
   )

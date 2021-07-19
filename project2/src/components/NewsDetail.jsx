@@ -10,12 +10,11 @@ export default function NewDetail() {
   const [article, setArticle] = useState({});
   const [comments, setComments] = useState([]);
   const { id } = useParams();
-  const [toggle, setToggle] = useState(false);
 
   useEffect(() => {
     
     fetchArticle()
-  
+   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
 

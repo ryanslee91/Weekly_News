@@ -28,6 +28,7 @@ export default function UsNews() {
             </Link>
           )
         }
+        return null;
       })}
  </div>
   )

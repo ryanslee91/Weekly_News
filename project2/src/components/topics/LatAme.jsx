@@ -28,6 +28,7 @@ export default function LatAme() {
             </Link>
           )
         }
+        return null;
       })}
  </div>
   )

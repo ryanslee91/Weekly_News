@@ -28,6 +28,7 @@ export default function Politics() {
             </Link>
           )
         }
+        return null;
       })}
  </div>
   )

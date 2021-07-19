@@ -28,6 +28,7 @@ export default function Markets() {
             </Link>
           )
         }
+        return null;
       })}
  </div>
   )

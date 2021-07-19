@@ -6,8 +6,6 @@ import SearchBar from './SearchBar';
 import NewsSlider from './NewsSlider';
 import './Home.css';
 
-import ClipLoader from "react-spinners/ClipLoader";
-
 export default function Home() {
 
   const [articles, setArticles] = useState([]);
@@ -71,6 +69,7 @@ export default function Home() {
             </Link>
           )
         }
+        return null;
       })}</div>
  </div>
       <div>

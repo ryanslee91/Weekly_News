@@ -28,6 +28,7 @@ export default function Sports() {
             </Link>
           )
         }
+        return null;
       })}
  </div>
   )

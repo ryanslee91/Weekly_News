@@ -28,6 +28,7 @@ export default function Tech() {
             </Link>
           )
         }
+        return null;
       })}
  </div>
   )

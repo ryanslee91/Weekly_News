@@ -28,6 +28,7 @@ export default function World() {
             </Link>
           )
         }
+        return null;
       })}
  </div>
   )

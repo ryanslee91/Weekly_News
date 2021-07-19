@@ -1,6 +1,3 @@
-import { useState, useEffect } from "react";
-import { BASE_URL, headers } from '../services';
-import axios from 'axios';
 import './AllNews.css';
 import { Link } from 'react-router-dom';
 
