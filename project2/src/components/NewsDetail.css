@@ -32,14 +32,17 @@ a {
 	color: black;
 }
 
-@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+@media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-min-device-pixel-ratio: 2) {
 	.fetched {
-		padding-left: 60px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 	}
 	.subInfo {
-		display: grid;
+		display: flex;
+		flex-direction: column;
 		justify-content: center;
-		margin-left: 160px;
+		height: 200px;
 	}
 
 	.author {
@@ -55,5 +58,15 @@ a {
 
 	.commentSec {
 		margin-bottom: 50px;
+	}
+
+	#fetchedImg {
+		width: 300px;
+		padding-left: 40px;
+	}
+
+	#fetchedTitle {
+		width: 300px;
+		padding-left: 40px;
 	}
 }

@@ -43,12 +43,12 @@ export default function NewDetail() {
   return (
     <div>
       <div className='fetched'>
-        <img src={article.fields?.image} alt={article.fields?.name} /><br />
+        <img src={article.fields?.image} alt={article.fields?.name} id='fetchedImg' /><br />
         <div className='subInfo'>
         <h4 className='author'><span>Author:</span> {article.fields?.author}</h4>
         <h4 className='topic'><span>Topic:</span> {article.fields?.topic}</h4>
           </div>
-        <h2>{article.fields?.title}</h2> 
+        <h2 id='fetchedTitle'>{article.fields?.title}</h2> 
       <h3 className='briefDesc'>{article.fields?.briefdesc}</h3>
       <h4><a href={article.fields?.link} target='_blank' rel="noreferrer">Read More</a></h4>
 <div className='commentSec'>
