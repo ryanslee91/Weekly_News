@@ -46,9 +46,14 @@ h3 {
 @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
 	.topicList {
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		justify-content: space-between;
 		width: 160%;
+		font-size: 25px;
+	}
+
+	.middle {
+		background-color: white;
 	}
 
 	#dayImage {
@@ -58,6 +63,16 @@ h3 {
 
 	.newsDay {
 		padding-left: 20px;
+	}
+	.newsOfDay {
+		margin-bottom: 20px;
+		margin-top: 0px;
+		padding-top: 30px;
+	}
+
+	#guide {
+		margin-left: 180px;
+		font-size: 30px;
 	}
 
 	.queriedImg {

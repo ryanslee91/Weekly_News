@@ -24,7 +24,7 @@ export default function SearchBar(props) {
 
   return (
     <div className='searchSection'>
-      <h3>LOOK FOR MORE ARTICLES</h3>
+      <h3 id='lookFor'>LOOK FOR MORE ARTICLES</h3>
       <form>
       <input type='text' placeholder='Search..' onChange={(e) => props.onChange(e)} style={{ marginBottom: ' 40px' }}></input>
         </form>

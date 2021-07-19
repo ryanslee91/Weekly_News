@@ -72,7 +72,7 @@ export default function Home() {
         return null;
       })}</div>
  </div>
-      <div>
+      <div className='lastPart'>
         <SearchBar onChange={handleSearch} />
         <div className='queriedArt'>
         {allQueriedArticles.map((article) => (

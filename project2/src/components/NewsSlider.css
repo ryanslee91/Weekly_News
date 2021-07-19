@@ -62,17 +62,25 @@
 	.imageSlide {
 		width: 300px;
 		height: 200px;
-		margin-top: -120px;
+		margin-top: -130px;
+		padding-bottom: 50px;
 		margin-left: -195px;
 	}
 	.slider {
 		padding-left: 230px;
 	}
 
+	.title {
+		font-size: 18px;
+		margin-bottom: 250px;
+	}
+
 	.left-arrow {
 		margin-left: 100px;
+		margin-top: -130px;
 	}
 	.right-arrow {
 		margin-right: -410px;
+		margin-top: -130px;
 	}
 }
