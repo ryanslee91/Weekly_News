@@ -41,8 +41,8 @@ header {
 	background-color: black;
 }
 
-@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
-	.navBar {
-		width: 160%;
+@media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+	header {
+		text-align: revert;
 	}
 }

@@ -43,13 +43,12 @@ h3 {
 	width: 480px;
 }
 
-@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+@media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-min-device-pixel-ratio: 2) {
 	.topicList {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		width: 160%;
-		font-size: 25px;
+		font-size: 18px;
+		flex-wrap: wrap;
+		align-items: center;
+		margin: 0 15px;
 	}
 
 	.middle {
