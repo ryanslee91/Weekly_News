@@ -41,3 +41,6 @@
 	cursor: pointer;
 	user-select: none;
 }
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+}
