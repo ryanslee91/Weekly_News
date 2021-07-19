@@ -4,6 +4,7 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 import './Topics.css';
 
+
 export default function Business() {
   const [articles, setArticles] = useState([]);
   useEffect(() => {

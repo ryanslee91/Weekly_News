@@ -56,14 +56,15 @@ h3 {
 	}
 
 	#dayImage {
-		width: 300px;
+		width: 200px;
 	}
 
 	.newsOfDay {
 		margin-top: 0px;
 		padding-top: 50px;
 		margin-right: 0;
-		width: 300px;
+		width: 274px;
+		margin-left: 0;
 	}
 
 	#guide {

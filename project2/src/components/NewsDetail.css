@@ -37,6 +37,8 @@ a {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		margin-bottom: 150px;
+		margin-top: 0;
 	}
 	.subInfo {
 		display: flex;

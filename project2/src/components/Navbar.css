@@ -45,4 +45,8 @@ header {
 	header {
 		text-align: revert;
 	}
+
+	#aboutUs {
+		margin-left: 280px;
+	}
 }

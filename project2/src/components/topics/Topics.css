@@ -7,12 +7,12 @@ img {
 	margin-bottom: 50px;
 }
 
-@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+@media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-min-device-pixel-ratio: 2) {
 	img {
-		width: 200px;
-		padding-left: 200px;
+		width: 300px;
 	}
+
 	.topicData {
-		padding-left: 200px;
+		height: 1000px;
 	}
 }

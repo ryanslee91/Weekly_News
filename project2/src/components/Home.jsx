@@ -51,7 +51,7 @@ export default function Home() {
       <Link to='/politics' style={{textDecoration: 'none', color:'black'}}>Politics</Link> 
       <Link to='/sports' style={{textDecoration: 'none', color:'black'}}>Sports</Link> 
       <Link to='/tech' style={{textDecoration: 'none', color:'black'}}>Tech</Link> 
-      <Link to='/us' style={{textDecoration: 'none', color:'black'}}>US</Link> 
+      <Link to='/us-news' style={{textDecoration: 'none', color:'black'}}>US</Link> 
       <Link to='/world' style={{textDecoration: 'none', color:'black'}}>World</Link> 
       </div>
       <div className='middle'>
