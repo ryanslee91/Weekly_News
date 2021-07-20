@@ -65,11 +65,13 @@ h3 {
 		margin-right: 0;
 		width: 27px;
 		margin-left: 0;
+		width: 280px;
 	}
 
 	#guide {
 		font-size: 30px;
 		height: 200px;
+		padding: 0;
 	}
 
 	.queriedImg {
