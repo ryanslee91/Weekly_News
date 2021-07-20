@@ -92,9 +92,9 @@ like the one in Wallstreetjournal.
 | NEW COMMENT | H | 3hrs| 3hrs | 3hrs |
 | COMMENT STYLE | H | 3hrs| 3hrs | 3hrs |
 | NAVBAR | H | 2hrs| 2hrs | 2hrs |
-| DEBUGGING | H | 3hrs| hrs | hrs |
+| DEBUGGING | H | 3hrs| 3hrs | 3hrs |
 | DEPLOYMENT | H | 3hrs| 3hrs | 3hrs |
-| Total | H | 40hrs| hrs | hrs |
+| Total | H | 40hrs| 37hrs | 37hrs |
 
 ## SWOT Analysis
 
