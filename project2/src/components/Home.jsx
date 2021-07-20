@@ -4,13 +4,14 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 import SearchBar from './SearchBar';
 import NewsSlider from './NewsSlider';
+import { Helmet } from 'react-helmet';
 import './Home.css';
 
 export default function Home() {
 
   const [articles, setArticles] = useState([]);
   const [allQueriedArticles, setAllQueriedArticles] = useState([]);
- 
+  const TITLE = 'Weekly Hot News';
 // for searchbar
   useEffect(() => {
     const fetchArticles = async () => {
@@ -39,9 +40,11 @@ export default function Home() {
 
   return (
     <div className='home'>
-      <head>
-        <title>Weekly Hot News</title>
-        </head>
+      <Helmet>
+        <title>
+          {TITLE}
+        </title>
+      </Helmet>
       <div className='topicList'>
       <Link to='/business' style={{textDecoration: 'none', color:'black'}}>Business</Link>
       <Link to='/economy' style={{textDecoration: 'none', color:'black'}}>Economy</Link> 

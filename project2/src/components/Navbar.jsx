@@ -5,6 +5,7 @@ import Stock from './Stock';
 
 export default function Navbar() {
   return (
+    
     <div className='navBar'>
       <div>
         <header>
