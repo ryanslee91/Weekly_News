@@ -101,7 +101,7 @@ like the one in Wallstreetjournal.
 ### Strengths: I am getting familiar with fetching external API data. I also learned how to do better css styling especially for media queries. During my project 1, I was so confused and behind all the materials I learned. So, I could not really decorate my website and add helpful and creative features. But, I am glad I am getting used to javascript more than before and now have courage to attempt some advanced skills.
 
 
-### Weaknesses: While I learned a lot about CSS styling, I also realize I still need more practices with it. I am also still struggling with makingn comment section, especially the place where comments are posted.
+### Weaknesses: While I learned a lot about CSS styling, I also realize I still need more practices with it. I am also still struggling with makinng comment section, especially the place where comments are posted. I was searching how to make delete function and found there are several ways to do it, but most were written in component function, which I am not familiar with and not familiar to convert it to regular function. So, I realize that I need to be more familiar with how to write component function and how to convert it to regular javascript function way.
 
 ### Opportunities: This project gave me an opportunity to apply all the knowledge and skills learned throughout the Unit 2. In addition, I had great opportunities to practice materials learned from Unit 1.
 
