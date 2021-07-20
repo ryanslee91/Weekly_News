@@ -65,8 +65,8 @@ export default function NewsDetail() {
         </div>
         <div className='comments'>
           {comments.map(comment =>
-          (<h4><span id='commentor'>{comment.fields.name}: </span>
-            {comment.fields.body} <button onClick={handleDelete} id='deleteButton'>Delete</button></h4>))}
+          (<container className='commentCont'><h4><span id='commentor'>{comment.fields.name}: </span>
+            {comment.fields.body} <button onClick={handleDelete} id='deleteButton'>Delete</button></h4></container>))}
         </div>
       </div>
     </div>

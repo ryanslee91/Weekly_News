@@ -1,8 +1,15 @@
 .comments {
-	font-size: 14px;
+	font-size: 15px;
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 60px;
+}
+
+.commentCont {
+	width: 500px;
+	border: 3px solid #333;
+	padding: 15px 10px;
+	margin-left: 320px;
 }
 
 .fetched {
