@@ -17,7 +17,7 @@ footer {
 
 @media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-min-device-pixel-ratio: 2) {
 	footer {
-		height: 150px;
+		height: 160px;
 		width: 100%;
 		padding-right: 82px;
 	}

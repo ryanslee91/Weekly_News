@@ -2,7 +2,7 @@ import axios from 'axios';
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { BASE_URL, headers } from '../services';
-import { useParams } from 'react-router-dom';
+import { useParams, useHistory } from 'react-router-dom';
 import NewComment from './NewComment';
 import './NewsDetail.css';
 
@@ -11,6 +11,7 @@ export default function NewsDetail() {
   const [article, setArticle] = useState({});
   const [comments, setComments] = useState([]);
   const { id } = useParams();
+  const history = useHistory();
   
  
 
@@ -42,10 +43,15 @@ export default function NewsDetail() {
     })
   }
 
-  const handleDelete =  (e) => {
-    // e.target.filter(target => target.id !== id);
-  }
+  const handleDelete = async () => {
+    // const commentURL = 'https://api.airtable.com/v0/appzOtkGYT2fmwlmR/comments/'
  
+    //   const res = await axios.delete(`${commentURL}${id}`, { headers });
+    //   console.log('res', res.data);
+    //   history.push('/article/:id');
+
+  };
+  
   
   return (
     <div>
@@ -63,11 +69,13 @@ export default function NewsDetail() {
             <NewComment articleId={id} fetchArticle={fetchArticle} /> <br />
           </container>
         </div>
+        <section>
         <div className='comments'>
           {comments.map(comment =>
           (<container className='commentCont'><h4><span id='commentor'>{comment.fields.name}: </span>
             {comment.fields.body} <button onClick={handleDelete} id='deleteButton'>Delete</button></h4></container>))}
-        </div>
+          </div>
+          </section>
       </div>
     </div>
   )

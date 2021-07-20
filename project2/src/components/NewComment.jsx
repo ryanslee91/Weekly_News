@@ -49,9 +49,6 @@ export default function NewComment(props) {
   
   return (
     <section>
-      <div>
-
-      </div>
     <div class="container">
         <h3>Add your comment!</h3>
       <form onSubmit={handleSubmit}>

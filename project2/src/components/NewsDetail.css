@@ -1,15 +1,22 @@
+section {
+	display: grid;
+	flex-direction: column;
+}
+
 .comments {
 	font-size: 15px;
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 60px;
+
+	margin-left: 120px;
 }
 
 .commentCont {
 	width: 500px;
 	border: 3px solid #333;
 	padding: 15px 10px;
-	margin-left: 320px;
+	margin-right: 100px;
 }
 
 .fetched {
@@ -50,6 +57,14 @@ a {
 		justify-content: center;
 		margin-bottom: 150px;
 		margin-top: 0;
+	}
+
+	.commentCont {
+		margin-left: 0;
+		margin-left: -30px;
+		width: 250px;
+		height: 80px;
+		margin-bottom: 50px;
 	}
 	.subInfo {
 		display: flex;
