@@ -32,6 +32,10 @@ a {
 	color: black;
 }
 
+#deleteButton {
+	color: red;
+}
+
 @media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-min-device-pixel-ratio: 2) {
 	.fetched {
 		display: flex;

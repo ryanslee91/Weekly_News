@@ -89,3 +89,6 @@ export default function Home() {
   </div>
 )
 }
+
+// Helmet information from
+// https://stackoverflow.com/questions/46160461/how-do-you-set-the-document-title-in-react

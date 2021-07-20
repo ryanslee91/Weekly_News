@@ -6,15 +6,18 @@ import { useParams } from 'react-router-dom';
 import NewComment from './NewComment';
 import './NewsDetail.css';
 
-export default function NewDetail() {
+
+export default function NewsDetail() {
   const [article, setArticle] = useState({});
   const [comments, setComments] = useState([]);
   const { id } = useParams();
+  
+ 
 
   useEffect(() => {
     
     fetchArticle()
-   // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
 
@@ -30,7 +33,6 @@ export default function NewDetail() {
     }
   };
 
-
   const fetchComments = async (commentsArr) => {
     const commentURL = 'https://api.airtable.com/v0/appzOtkGYT2fmwlmR/comments/'
     commentsArr.forEach(async comment => {
@@ -39,28 +41,34 @@ export default function NewDetail() {
       setComments((prevComments) => ([...prevComments, res.data]))
     })
   }
+
+  const handleDelete =  (e) => {
+    // e.target.filter(target => target.id !== id);
+  }
+ 
   
   return (
     <div>
       <div className='fetched'>
         <img src={article.fields?.image} alt={article.fields?.name} id='fetchedImg' /><br />
         <div className='subInfo'>
-        <h4 className='author'><span>Author:</span> {article.fields?.author}</h4>
-        <h4 className='topic'><span>Topic:</span> {article.fields?.topic}</h4>
-          </div>
-        <h2 id='fetchedTitle'>{article.fields?.title}</h2> 
-      <h3 className='briefDesc'>{article.fields?.briefdesc}</h3>
-      <h4><a href={article.fields?.link} target='_blank' rel="noreferrer">Read More</a></h4>
-<div className='commentSec'>
-        <container>
-        <NewComment articleId={id} fetchArticle={fetchArticle} /> <br />
-        </container>
-      </div>
+          <h4 className='author'><span>Author:</span> {article.fields?.author}</h4>
+          <h4 className='topic'><span>Topic:</span> {article.fields?.topic}</h4>
+        </div>
+        <h2 id='fetchedTitle'>{article.fields?.title}</h2>
+        <h3 className='briefDesc'>{article.fields?.briefdesc}</h3>
+        <h4><a href={article.fields?.link} target='_blank' rel="noreferrer">Read More</a></h4>
+        <div className='commentSec'>
+          <container>
+            <NewComment articleId={id} fetchArticle={fetchArticle} /> <br />
+          </container>
+        </div>
         <div className='comments'>
-        {comments.map(comment =>
-          (<h4><span id='commentor'>{comment.fields.name}:</span> {comment.fields.body}</h4>))}
-        </div>
+          {comments.map(comment =>
+          (<h4><span id='commentor'>{comment.fields.name}: </span>
+            {comment.fields.body} <button onClick={handleDelete} id='deleteButton'>Delete</button></h4>))}
         </div>
       </div>
+    </div>
   )
 }
