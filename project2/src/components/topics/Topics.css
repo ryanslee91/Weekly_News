@@ -1,10 +1,16 @@
 img {
-	width: 480px;
+	width: 400px;
 }
 
 .topicData {
 	margin-top: 50px;
 	margin-bottom: 50px;
+}
+
+#titles {
+	font-size: 15px;
+	width: 200px;
+	margin: 0 auto;
 }
 
 @media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-min-device-pixel-ratio: 2) {

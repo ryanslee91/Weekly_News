@@ -2,11 +2,11 @@
 	margin-top: 100px;
 	margin-bottom: 130px;
 	display: grid;
-	grid-template-rows: 100px 100px;
+	grid-template-rows: 100px 100px 100px 100px 100px;
 	grid-auto-flow: column;
 	grid-auto-columns: 120px;
 	grid-gap: 60px;
-	overflow: auto;
+	/* overflow: auto; */
 	justify-content: center;
 	font-weight: bold;
 	font-size: 30px;
@@ -76,8 +76,8 @@
 	.allNewsList {
 		display: grid;
 		grid-template-rows: 100px 100px 100px 100px;
-		grid-auto-flow: column;
-		grid-auto-columns: 120px;
+		grid-auto-flow: row;
+		grid-auto-rows: 120px;
 		padding-bottom: 100px;
 		padding-top: 5px;
 		column-gap: 1px;

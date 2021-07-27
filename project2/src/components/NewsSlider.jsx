@@ -48,9 +48,9 @@ export default function NewsSlider() {
             key={index}>
               { index === current && (
               <Link to={`/article/${article.id}`} key={article.id} style={{ textDecoration: 'none' }}>
-                <div class='img_wrap'>
+                <div>
                 <img src={article.fields.image} alt={article.fields.name} className='imageSlide' />
-                <p className="briefDesc">{article.fields.briefdesc}</p></div>
+     </div>
                 <h3 className='title'>{article.fields.title}</h3>
                 </Link>
               )}

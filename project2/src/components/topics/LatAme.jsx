@@ -24,7 +24,7 @@ export default function LatAme() {
           return (
             <Link to={`/article/${article.id}`} key={article.id} style={{textDecoration: 'none'}}>
               <img src={article.fields.image} alt={article.fields.name} />
-              <h3>{article.fields.title}</h3>
+              <h3 id='titles'>{article.fields.title}</h3>
             </Link>
           )
         }

@@ -10,8 +10,8 @@
 }
 
 .newsOfDay {
-	width: 500px;
-	height: 320px;
+	width: 350px;
+	height: 260px;
 	border: 1px solid black;
 	padding: 50px;
 	margin: 20px;
@@ -19,7 +19,7 @@
 	background-color: white;
 }
 #dayImage {
-	width: 400px;
+	width: 330px;
 	padding-bottom: -30px;
 }
 .newsDay {
@@ -56,14 +56,13 @@ h3 {
 	}
 
 	#dayImage {
-		width: 300px;
+		width: 250px;
 	}
 
 	.newsOfDay {
 		margin-top: 0px;
 		padding-top: 50px;
 		margin-right: 0;
-		width: 27px;
 		margin-left: 0;
 		width: 280px;
 	}
