@@ -10,14 +10,6 @@ https://lucid-bose-0ddb81.netlify.app/
 
 The website that I will be creating for this second project will allow users to search news by topic and receive the links for related news. This website will enable user to post and edit the comment for each news. This website will also list out all the news by topics. In addition, it will present highlighted news on the homepage and let the user to scroll to look through.
 
-## Wireframes
-
-![Wireframe](./assets/WF2.png)
-![Wireframe](./assets/WF3.png)
-
-## Component Hierarchy
-
-![Wireframe](./assets/hr.png)
 
 ## API and Data Sample
 
@@ -59,44 +51,6 @@ https://airtable.com/tblWqLsYeGt9B13wJ
 - USE AXIOS TO CONSUME DATA FROM AIRTABLE, AND RENDER THAT DATA IN MY COMPONENTS.
 - USE AXIOS TO POST NEW DATA ON AIRTABLE
 
-
-#### PostMVP  
-- CREATE A 2ND HEADER THAT DISPLAYS MAJOR STOCK OR CURRENCY INFO
-like the one in Wallstreetjournal.
-- MAKE 'KOREAN' VERSION AVAILABLE.
-
-## Project Schedule
-
-
-|  Day | Deliverable | Status
-|---|---| ---|
-|July 10-12| Prompt / Wireframes / Priority Matrix / Timeframes |Complete
-|July 13| Project Approval | Complete
-|July 13| Core Application Structure (HTML, CSS, etc.) | Complete
-|July 14| Pseudocode / actual code | Complete
-|July 15| Initial Clickable Model  | Complete
-|July 16| MVP | Complete
-|July 17-19| POSTMVP /WRAPUP | Complete
-|July 20| Presentations | Complete
-
-## Timeframes
-
-| Component | Priority | Estimated Time | Time Invested | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| CORE APP STRUCTURE(HTML,CSS,JAVASCRIPT) | H | 3hrs| 3hrs | 3hrs |
-| Working with AIRTABLE | H | 3hrs| 3hrs | 3hrs |
-| PSEUDOCODE | H | 3hrs| 2hrs | 2hrs |
-| AIRTABLE API REQUEST | H | 3hrs| 3hrs | 3hrs |
-| CREATE REACT FUNCTIONS | H | 3hrs| 3hrs | 3hrs |
-| STYLE CSS | H | 3hrs| 4hrs | 4hrs |
-| ROUTE AND LINK | H | 3hrs| 3hrs | 3hrs |
-| AXIOS | H | 2hrs| 2hrs | 2hrs |
-| NEW COMMENT | H | 3hrs| 3hrs | 3hrs |
-| COMMENT STYLE | H | 3hrs| 3hrs | 3hrs |
-| NAVBAR | H | 2hrs| 2hrs | 2hrs |
-| DEBUGGING | H | 3hrs| 3hrs | 3hrs |
-| DEPLOYMENT | H | 3hrs| 3hrs | 3hrs |
-| Total | H | 40hrs| 37hrs | 37hrs |
 
 ## SWOT Analysis
 
