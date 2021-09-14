@@ -4,7 +4,7 @@
 
 NEWS STREAMING WEBSITE
 
-https://lucid-bose-0ddb81.netlify.app/
+https://weekly-news.netlify.app/
 
 ## Project Description
 
